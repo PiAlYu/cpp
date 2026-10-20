@@ -1,0 +1,9 @@
+{
+  "server_url": "http://127.0.0.1:8080",
+  "model": "local-model",
+  "system_prompt": "Ты учебный помощник. Отвечай по-русски, кратко и понятно.",
+  "context_size": 1024,
+  "max_tokens": 64,
+  "temperature": 0.3,
+  "timeout_seconds": 180
+}

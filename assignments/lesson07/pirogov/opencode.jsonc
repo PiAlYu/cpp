@@ -1,0 +1,30 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "msu/qwen38_27b",
+  "providers": {
+    "msu": {
+      "name": "MSU Supercomputer",
+      "package": "@opencode/ai/providers/openai-compatible",
+      "settings": {
+        "baseURL": "https://contest.cs.msu.ru/llm/v1",
+        "apiKey": "{env:MSU_API_KEY}"
+      },
+      "models": {
+        "qwen38_27b": {
+          "name": "Qwen 27B",
+          "modelID": "qwen38_27b",
+          "capabilities": {
+            "tools": true,
+            "input": ["text"],
+            "output": ["text"]
+          }
+        }
+      }
+    }
+  },
+  "permissions": [
+    {"action": "shell", "resource": "*", "effect": "ask"},
+    {"action": "edit", "resource": "*", "effect": "ask"}
+  ]
+}
+
